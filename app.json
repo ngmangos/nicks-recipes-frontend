@@ -1,28 +1,23 @@
 {
   "expo": {
-    "name": "nicks-recipes",
+    "name": "Nick's Recipes",
     "slug": "nicks-recipes",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/recipe.png",
     "scheme": "nicksrecipes",
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon"
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/images/android-icon-foreground.png",
-        "backgroundImage": "./assets/images/android-icon-background.png",
-        "monochromeImage": "./assets/images/android-icon-monochrome.png"
-      },
+      "icon": "./assets/images/recipe.png",
       "predictiveBackGestureEnabled": false,
       "package": "com.ngmangos.nicksrecipes"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/recipe.png"
     },
     "plugins": [
       "expo-router",
@@ -31,7 +26,7 @@
         {
           "backgroundColor": "#208AEF",
           "android": {
-            "image": "./assets/images/splash-icon.png",
+            "image": "./assets/images/recipe.png",
             "imageWidth": 76
           }
         }
