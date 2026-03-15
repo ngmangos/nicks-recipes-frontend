@@ -12,7 +12,7 @@ const AboutScreen = () => {
         <Rect x="15" y="15" width="70" height="70" stroke="red" strokeWidth="2" fill="yellow" />
       </Svg>
       <View style={styles.container}>
-        <Text style={styles.text}>Shopping screen</Text>
+        <Text style={styles.text}>Shopping scree</Text>
       </View>
       <View style={styles.footerContainer}>
         <CustomButton label={"Button"}/>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
   },
   footerContainer: {
-    flex: 1 / 3,
+    flex: 1,
     alignItems: 'center',
   },
 });

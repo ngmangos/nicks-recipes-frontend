@@ -1,7 +1,12 @@
-import BookIcon from '@/assets/images/BookIcon';
-import ListIcon from '@/assets/images/ListIcon';
-import UserIcon from '@/assets/images/UserIcon';
+import BookIcon from '@/components/images/BookIcon';
+import ListIcon from '@/components/images/ListIcon';
+import UserIcon from '@/components/images/UserIcon';
 import { Tabs } from 'expo-router';
+
+// Pallette: https://paletton.com/#uid=50i0u0koq++cE+Mi++Yuf+WM3ZB
+// Next: https://paletton.com/#uid=50i0u0khMZY42+UbV+umWYMs3V7
+
+const tintColor = '#FFE9DF';
 
 const TabLayout = () => {
   return (
@@ -9,14 +14,15 @@ const TabLayout = () => {
       screenOptions={{
         tabBarShowLabel: false, // hide all titles
         tabBarStyle: {
-          backgroundColor: '#badd13',
-          borderTopColor: '#eee',
+          backgroundColor: '#FF9F71',
+          borderTopColor: '#FFBFA0',
           height: 55,
         },
         headerStyle: {
-          backgroundColor: '#208AEF', // header background color
+          backgroundColor: '#FF9F71', // header background color
+          borderBottomColor: '#FFBFA0', // header border color
         },
-        headerTintColor: '#fff', // color of back button & title
+        headerTintColor: tintColor, // color of back button & title
         headerTitleStyle: {
           fontWeight: 'bold',
           fontSize: 20,
@@ -27,21 +33,21 @@ const TabLayout = () => {
         name="index" 
         options={{ 
           title: 'Recipes',
-          tabBarIcon: () => <BookIcon />
+          tabBarIcon: () => <BookIcon color={tintColor}/>
         }}
       />
       <Tabs.Screen
         name="shopping" 
         options={{ 
           title: 'Shopping',
-          tabBarIcon: () => <ListIcon />
+          tabBarIcon: () => <ListIcon color={tintColor}/>
         }}
       />
       <Tabs.Screen 
         name="profile" 
         options={{ 
           title: 'Profile',
-          tabBarIcon: () => <UserIcon />
+          tabBarIcon: () => <UserIcon color={tintColor}/>
         }}
       />
     </Tabs>

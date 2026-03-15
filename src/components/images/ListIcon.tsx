@@ -1,8 +1,8 @@
 import Svg, { Path } from 'react-native-svg';
 
-const ListIcon = () => {
+const ListIcon =  ({ color = '#fff' }: { color: string }) => {
   return (
-    <Svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <Svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <Path d="M15 12h-5"/>
       <Path d="M15 8h-5"/>
       <Path d="M19 17V5a2 2 0 0 0-2-2H4"/>

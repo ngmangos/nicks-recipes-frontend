@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
     borderRadius: 18,
   },
   footerContainer: {
-    flex: 1 / 3,
+    flex: 1,
     alignItems: 'center',
   },
 });
